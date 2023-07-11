@@ -75,9 +75,45 @@ public class MapInterfaceExample {
         map11.put("bcd",3456);
 
 
+        Map<String,List<String>>  map222 = new HashMap<>();
 
 
 
+
+
+
+        // Linked HashMap
+        // It maintain the insertion order
+        //  Duplicate not allow keys
+        // This is extending HashMap , also implementating Map interface
+        // it came from Java 1.4
+
+         Map<String,String>  linkedHashMap = new LinkedHashMap<>();
+
+        linkedHashMap.put("sdfgh","dfgh");
+        linkedHashMap.put("dfgh","kjhgf");
+        linkedHashMap.put("oiuy","oiuygf");
+        linkedHashMap.put("dfgh","suhas");
+
+         System.out.println(linkedHashMap);
+
+
+        // Tree Map
+        // It will not allow duplicates
+        // insertion order not maintain
+        // null is not allow
+        // it came from Java 1.2
+        // Tree set doing sorting for us
+
+
+        Map<String,Integer>  treeMap = new TreeMap<>();
+        treeMap.put("two",2);
+        treeMap.put("akashy",2);
+        //treeMap.put(null,2);   // null not allow
+        treeMap.put("zebra",2);
+        treeMap.put("kite",2);
+
+        System.out.println(treeMap);
 
 
 
